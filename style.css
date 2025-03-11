@@ -1,0 +1,37 @@
+/* 
+
+    Flexbox - Intro
+
+*/
+
+
+body{
+    background-color: darkslategray;
+    color: cornsilk;
+}
+
+.container{
+    background-color: rgb(240, 140, 178);
+    padding: 1rem;
+
+    /* Habilitamos Flexbox en el elemento contendor */
+
+    display: flex;
+}
+
+.item{
+    background-color: indigo;
+}
+
+.item-flex{
+    background-color: dodgerblue;
+
+    /* Habilitamos flexbox en elemento hijo */
+
+    display: flex;
+}
+
+.item-flex > h2 {
+    color: rgb(23, 23, 23);
+    background-color: aquamarine;
+}
