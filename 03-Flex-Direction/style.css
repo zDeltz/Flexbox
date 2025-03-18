@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkslateblue;
+    color: bisque;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row; /* Valor default */
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+
+    margin: 0 auto;
+    max-width: 960px;
+    height: 960px;
+    background-color: rgb(5, 119, 93);
+}
+
+.item{
+    text-align: center;
+    padding-top: 36px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(199, 17, 53);
+    border: 2px solid rgb(255, 221, 127);
+}
