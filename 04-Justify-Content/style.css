@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: darkslateblue;
+    color: blanchedalmond;
+    font-family: sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    /*  flex-direction: row;  /* Default */
+    /*  flex-direction: row-reverse;  /* El eje principal se invierte */
+    /*  flex-direction: column;  /* Default para la dirección vertical */
+    /*  flex-direction: column-reverse; /* El eje vertical se invierte */
+
+    justify-content: flex-start;  /* Default - Alinea al inicio principal*/
+    justify-content: flex-end;  /* Alinea al final principal */
+    justify-content: center;  /* Alinea todo al centro */
+    justify-content: space-around;  /* Distribuye el espacio disponible a cada lado de los elementos de forma proporcional */
+    justify-content: space-between;  /* Distribuye el espacio disponible entre los elementos */
+    justify-content: space-evenly;  /* Distribuye el espacio uniformemente entre los elementos y el contenedor */
+    
+    background-color: crimson;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+
+.item{
+    background-color: greenyellow;
+    padding-top: 46px;
+    text-align: center;
+    color: rgb(59, 1, 89);
+    width: 100px;
+    height: 100px;
+}
