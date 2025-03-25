@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: crimson;
+    font-family: sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-content: normal;  /* Default */
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+    align-content: stretch;
+
+
+    width: 500px;
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+
+.item{
+    width: 150px;
+    /* height: 100px; */
+    background-color: springgreen;
+    text-align: center;
+    border: 1px solid rgb(78, 26, 109);
+}
