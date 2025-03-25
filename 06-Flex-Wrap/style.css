@@ -1,0 +1,42 @@
+/* 
+
+    Flex box wrap en su valor default hace que el contenedor padre si tiene una anchura o alutra definida, sus contenedores hijos no puedan sobrepasarlo.
+
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(100, 0, 75);
+    font-family: sans-serif;
+    color: bisque;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 16px;  /* Espacio entre los elementos */
+
+    flex-wrap: nowrap;  /* Default */  /* Esto no forza el salto de línea */
+    flex-wrap: wrap;
+
+    width: 500px;
+    height: 500px;
+    background-color: rgb(235, 174, 77);
+    padding: 16px 0;
+}
+
+
+.item{
+    background-color: darkslategray;
+    width: 150px;
+    border: 1px solid cornsilk;
+    text-align: center;
+    /* height: 50px; */
+}
