@@ -1,0 +1,61 @@
+/* 
+
+    Flex Shrink
+
+    Es una de las 3 propiedades que reciben los elementos (items) dentro de un contenedor (container) con display: flex
+
+    flex-shrink -> Define cuánto puede encogerse un elemento si el contenedor es más pequeño que el tamaño total de los elementos.
+
+    * Valor por defecto 1: Se encoge si es necesario.
+    * Si se pone 0: no se encoge
+    * Funciona proporcionalmente como flew-grow
+ 
+*/
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rebeccapurple;
+    font-family: Josefin sans;
+    color: cornsilk;
+}
+
+.container{
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+
+.item{
+    width: 250px;
+    flex-shrink: 1;     /* Valor por defecto. Se encoge como sea necesario */
+
+    border: 1px solid rgb(7, 95, 62);
+    background-color: rgb(197, 30, 66);
+}
+
+
+.item-1{
+    flex-shrink: 0;     /* No se encoge */
+}
+
+
+.item-2{
+    flex-shrink: 1;     /* Default, se encoge proporcionalmente */
+}
+
+
+.item-3{
+    flex-shrink: 2;     /* Se encoge con un factor de 2 */
+}
+
+
+.item-4{
+    flex-shrink: 3;     /* Se encoge con un factor de 3 */
+}
+
